@@ -1,0 +1,253 @@
+.business {
+	padding-bottom: 167px;
+}
+
+.business__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.business__block h2 {
+	font-size: 42px;
+	line-height: 50px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+.business__block h2 span {
+	color: var(--orange);
+}
+
+.business__block p {
+	font-size: 15px;
+	line-height: 28px;
+	letter-spacing: 0.5px;
+	margin-bottom: 46px;
+}
+
+.business__button:hover {
+	background-color: var(--water);
+	color: var(--violet);
+	box-shadow: -11.09px 18.13px 36.6483px rgba(41, 132, 206, 0.23);
+}
+
+.business__block {
+	max-width: 470px;
+}
+
+.business__grafic {
+	position: relative;
+}
+
+.business__grafic__arrow {
+	position: absolute;
+	transform: translate(-50%, 122px);
+	box-shadow: -11px 16px 25px rgba(19, 194, 150, 0.24);
+	border-radius: 6px;
+}
+
+.business__grafic__discount {
+	position: absolute;
+	padding: 15px 30px;
+	background-color: var(--blue);
+	border-radius: 10px;
+	right: 0;
+	transform: translate(calc(100% - 17px), 246px);
+	z-index: -1;
+	box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+}
+
+.business__grafic__discount span {
+	display: block;
+	color: var(--white);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.business__grafic__layer {
+	z-index: 2;
+	position: relative;
+}
+
+.business__discount__norm {
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: 0.5px;
+	margin-bottom: 1px;
+}
+
+.business__grafic img {
+	max-width: 260px;
+	width: 100%;
+}
+
+.business__statistic {
+	padding: 20px 30px;
+	background-color: var(--white);
+	box-shadow: -8px 16px 60px rgba(82, 114, 139, 0.24);
+	border-radius: 0 0 10px 10px;
+
+}
+
+.business__statistic span {
+	display: block;
+}
+
+.business__statistic h3 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+	margin-bottom: 2px;
+}
+
+.business__statistic address {
+	color: var(--gray-600);
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: 0.5px;
+	margin-bottom: 22px;
+	font-style: normal;
+}
+
+.business__statistic__price {
+	font-size: 24px;
+	line-height: 29px;
+	color: var(--water);
+	margin-bottom: 5px;
+}
+
+.business__statistic__descr {
+	color: var(--gray-600);
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.business__statistic__numbers {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.business__number__bold {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--black);
+}
+
+.business__number__norm {
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: 0.5px;
+	color: var(--gray-600);
+}
+
+@media (max-width: 1300px) {
+	.business__grafic {
+		right: 16%;
+	}
+}
+
+@media (max-width: 1132px) {
+	.business {
+		padding-bottom: 100px;
+	}
+
+	.business__block h2 {
+		font-size: 36px;
+		line-height: 42px;
+		font-weight: 500;
+	}
+
+	.business__grafic {
+		max-width: 48%;
+	}
+
+	.business__wrapper {
+		position: relative;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	.business__block {
+		text-align: center;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		padding-top: 100px;
+	}
+
+	.business__button {
+		/* width: 100%; */
+		margin: 0 auto;
+		display: flex;
+	}
+
+	.business__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.business__grafic {
+		position: static;
+		width: 100%;
+		max-width: 260px;
+		margin: 46px auto 0;
+	}
+
+}	
+
+@media (max-width: 650px) {
+	.business__block h2 {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	.business__button {
+		width: 100%;
+		justify-content: center
+		;
+		margin-top: 20px;
+	}
+
+	.business {
+		padding-bottom: 50px;
+	}
+
+	.business__block {
+		padding-top: 0;
+	}
+
+	.business__block p {
+		margin-bottom: 0;
+	}
+
+	.business__grafic {
+		margin-right: 33%;
+	}
+}
+
+@media (max-width: 490px) {
+	.business__grafic__discount {
+		position: static;
+		transform: none;
+		order: 2;
+		margin-top: 10px;
+	}
+	.business__grafic {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.business__grafic img {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,19 @@
+/* base styles */
+@import url(./variables.css);
+@import url(./global.css);
+@import url(./fonts.css);
+@import url(./style.css);
+
+/* components */
+@import url(./components/header.css);
+@import url(./components/footer.css);
+
+/* section components */
+@import url(./components/business.css);
+@import url(./components/callback.css);
+@import url(./components/choice.css);
+@import url(./components/information.css);
+@import url(./components/project.css);
+@import url(./components/start.css);
+@import url(./components/statistic.css);
+@import url(./components/traffic.css);
